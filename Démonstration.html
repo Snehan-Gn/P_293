@@ -1,0 +1,134 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="4danfdpqyfg21.png" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Démonstration - Godot</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <nav id="navbar-spy" class="navbar navbar-default">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">
+            <img src="4danfdpqyfg21.png" alt="Logo" class="logo" />
+          </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="Démonstration.html">Démonstration</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Démonstration d'un jeu réalisé sur Godot</h1>
+      <img
+        id="image_title"
+        src="1628960660_Pourquoi-les-emulateurs-de-jeux-video-sont-ils-si-importants-2048x1149.webp"
+        alt="gameplay_demo"
+      />
+
+      <section class="demo-section">
+        <div class="character-warning">
+          <strong>Avertissement :</strong> Toute ressemblance avec des personnes
+          existantes ou ayant existées est purement fortuite et toutes nos
+          remerciements à l'artiste Kyell Cornu actuellement porté disparu.
+        </div>
+
+        <h2>Présentation des personnages</h2>
+
+        <div class="character-gallery">
+          <div class="character-card">
+            <div class="character-image">
+              <img src="UwUphil (1).png" alt="Filboy" />
+            </div>
+            <div class="character-info">
+              <h3>Filboy</h3>
+              <p class="character-description">
+                Brillant informaticien de jour, justicier en soubrette la nuit,
+                sous sa jupe à volants et son tablier immaculé, Filboy cache un
+                génie du code et un cœur vaillant. D’une loyauté sans faille
+                envers les données propres et les systèmes bien rangés, il
+                n’hésite pas à plonger dans les serveurs corrompus pour
+                restaurer l’ordre. Mais attention : une simple éclaboussure
+                d’eau suffit à le paralyser dû à sa faiblesse et phobie des
+                douches.
+              </p>
+            </div>
+          </div>
+
+          <div class="character-card">
+            <div class="character-image">
+              <img src="uwubot (1).png" alt="Lavobot" />
+            </div>
+            <div class="character-info">
+              <h3>Lavobot</h3>
+              <p class="character-description">
+                Programmé pour nettoyer, perfectionné pour attaquer, Lavobot est
+                un robot de maintenance devenu menace. Son arme principale ? Un
+                flexible de douche à haute pression. Il traque Filboy avec un
+                seul objectif : le tremper. Froid, méthodique et toujours
+                propre.
+              </p>
+            </div>
+          </div>
+
+          <div class="character-card">
+            <div class="character-image">
+              <img src="DavidVolant (1).png" alt="Daveoiseau" />
+            </div>
+            <div class="character-info">
+              <h3>Daveoiseau</h3>
+              <p class="character-description">
+                Toujours perché sur une étagère ou planant dans les airs,
+                Daveoiseau est le fidèle compagnon de Filboy. Doté d’un flair
+                infaillible pour repérer les pièges et les raccourcis, il aide
+                le héros en sifflant des indices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 P_Web-Site_SnehanGnanassorian. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Auteur.html">Auteur</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      // Script pour rendre la navbar fixe lors du défilement
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar-spy");
+        if (window.scrollY > 50) {
+          navbar.classList.add("sticky-header");
+        } else {
+          navbar.classList.remove("sticky-header");
+        }
+      });
+
+      // Animation pour les éléments au défilement
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".character-card");
+
+        function checkVisibility() {
+          elements.forEach((element) => {
+            const position = element.getBoundingClientRect();
+            if (position.top < window.innerHeight - 100) {
+              element.classList.add("fade-in");
+            }
+          });
+        }
+
+        window.addEventListener("scroll", checkVisibility);
+        checkVisibility(); // Vérifier les éléments visibles au chargement
+      });
+    </script>
+  </body>
+</html>
