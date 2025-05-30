@@ -23,17 +23,55 @@
 
     <main>
       <h1>Démonstration d'un jeu réalisé sur Godot</h1>
-      <img
-        id="image_title"
-        src="1628960660_Pourquoi-les-emulateurs-de-jeux-video-sont-ils-si-importants-2048x1149.webp"
-        alt="gameplay_demo"
-      />
+      <img id="image_title" src="b1c204-2.jpg" alt="gameplay_demo" />
 
       <section class="demo-section">
         <div class="character-warning">
           <strong>Avertissement :</strong> Toute ressemblance avec des personnes
-          existantes ou ayant existées est purement fortuite et toutes nos
-          remerciements à l'artiste Kyell Cornu actuellement porté disparu.
+          existantes ou ayant existées est purement fortuite et tous nos
+          remerciements à notre designer artistique, Kyell Cornu, actuellement
+          porté disparu.
+        </div>
+
+        <h2>Synopsis</h2>
+        <div class="synopsis-content">
+          <p>
+            Dans un monde où chacun a le droit d'être bizarre,
+            <strong>Filboy est… très bizarre</strong>. Il sent mauvais, il ne se
+            coiffe jamais, mais ce qu'il aime par-dessus tout, c'est
+            <strong>les formules mathématiques</strong>. Pas les comprendre,
+            non. Juste… les <strong>aimer</strong>. Passionnément. Comme on
+            tombe sous le charme d'un inconnu mystérieux.
+          </p>
+
+          <p>
+            Il leur écrit des lettres. Il leur déclame des poèmes. Il
+            collectionne les équations dans un petit carnet qu'il garde contre
+            son cœur (et qui sent légèrement la chaussette sale). Selon lui, une
+            belle formule, c'est comme un baiser : mystérieuse, excitante, et
+            parfois impossible à résoudre.
+          </p>
+
+          <p>
+            Un jour, Filboy vit tranquillement dans son village poussiéreux
+            quand une terrible nouvelle tombe : les <strong>Lavobots</strong>,
+            des robots obsédés par la propreté, veulent
+            <strong>nettoyer le monde</strong> pour en faire un endroit parfait,
+            ordonné… et surtout
+            <strong>sans informaticiens puants ni matheux rêveurs</strong>.
+          </p>
+
+          <p>
+            Ils ont construit leur repaire dans un
+            <strong>château géant en forme de douche</strong> flottant dans les
+            nuages, d'où ils lancent des vagues de bulles nettoyantes capables
+            de rendre propre même un chat sauvage ou un professeur de
+            philosophie. C'est donc décidé : Filboy doit partir à leur
+            rescousse. Accompagné de son fidèle compagnon ailé,
+            <strong>Daveoiseau</strong>, un oiseau malin, rapide et pas du tout
+            sentimental, qui sert souvent de voix de la raison, il entame une
+            aventure périlleuse vers le Château-Sec.
+          </p>
         </div>
 
         <h2>Présentation des personnages</h2>
@@ -48,11 +86,11 @@
               <p class="character-description">
                 Brillant informaticien de jour, justicier en soubrette la nuit,
                 sous sa jupe à volants et son tablier immaculé, Filboy cache un
-                génie du code et un cœur vaillant. D’une loyauté sans faille
+                génie du code et un cœur vaillant. D'une loyauté sans faille
                 envers les données propres et les systèmes bien rangés, il
-                n’hésite pas à plonger dans les serveurs corrompus pour
-                restaurer l’ordre. Mais attention : une simple éclaboussure
-                d’eau suffit à le paralyser dû à sa faiblesse et phobie des
+                n'hésite pas à plonger dans les serveurs corrompus pour
+                restaurer l'ordre. Mais attention : une simple éclaboussure
+                d'eau suffit à le paralyser dû à sa faiblesse et phobie des
                 douches.
               </p>
             </div>
@@ -82,7 +120,7 @@
               <h3>Daveoiseau</h3>
               <p class="character-description">
                 Toujours perché sur une étagère ou planant dans les airs,
-                Daveoiseau est le fidèle compagnon de Filboy. Doté d’un flair
+                Daveoiseau est le fidèle compagnon de Filboy. Doté d'un flair
                 infaillible pour repérer les pièges et les raccourcis, il aide
                 le héros en sifflant des indices.
               </p>
@@ -90,11 +128,43 @@
           </div>
         </div>
       </section>
+
+      <h2>Démo</h2>
+      <div class="announcement-section">
+        <div class="announcement-icon">⏰</div>
+        <h3 class="announcement-title">Sortie reportée</h3>
+        <div class="announcement-content">
+          <p>
+            Nous sommes au regret de vous annoncer que la sortie de notre jeu
+            <strong>"Les Aventures de Filboy"</strong> a été temporairement
+            reportée.
+          </p>
+          <div class="missing-member">
+            <p>
+              Suite à la <strong>disparition mystérieuse</strong> de notre
+              designer artistique <strong>Kyell Cornu</strong>, l'équipe de
+              développement a dû revoir ses priorités et réorganiser le
+              processus de création.
+            </p>
+          </div>
+          <p>
+            Nous mettons tout en œuvre pour localiser notre collègue et, en
+            attendant son retour, nous continuons le développement avec les
+            ressources artistiques existantes.
+          </p>
+          <p>
+            Le jeu <strong>arrivera prochainement</strong> ! Nous vous tiendrons
+            informés de l'évolution de la situation et de la nouvelle date de
+            sortie dès que possible.
+          </p>
+        </div>
+        <div class="coming-soon-badge">Prochainement disponible</div>
+      </div>
     </main>
 
     <footer>
       <div class="footer-content">
-        <p>&copy; 2025 P_Web-Site_SnehanGnanassorian. All rights reserved.</p>
+        <p>&copy; 2025 P_Web-Site_SnehanGnanassorian. Tous droits réservés.</p>
         <ul class="footer-links">
           <li><a href="Contact.html">Contact</a></li>
           <li><a href="Auteur.html">Auteur</a></li>
@@ -103,7 +173,6 @@
     </footer>
 
     <script>
-      // Script pour rendre la navbar fixe lors du défilement
       window.addEventListener("scroll", function () {
         const navbar = document.getElementById("navbar-spy");
         if (window.scrollY > 50) {
@@ -113,7 +182,6 @@
         }
       });
 
-      // Animation pour les éléments au défilement
       document.addEventListener("DOMContentLoaded", function () {
         const elements = document.querySelectorAll(".character-card");
 
@@ -127,7 +195,7 @@
         }
 
         window.addEventListener("scroll", checkVisibility);
-        checkVisibility(); // Vérifier les éléments visibles au chargement
+        checkVisibility();
       });
     </script>
   </body>
